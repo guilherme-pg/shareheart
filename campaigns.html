@@ -7,8 +7,8 @@
     <meta name="theme-color" content="#f5f5f5" />
 
     <link rel="manifest" href="manifest.json">
-    <link rel="stylesheet" type="text/css" href="standard.css" />
-    <link rel="stylesheet" type="text/css" href="campaigns.css" />
+    <link rel="stylesheet" type="text/css" href="./css/standard.css" />
+    <link rel="stylesheet" type="text/css" href="./css/campaigns.css" />
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@800&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
 
 
@@ -60,22 +60,5 @@
     </footer>
 
 
-    <script src="standard.js"></script>
-    <script>
-        let newWorker;
-        if ('serviceWorker' in navigator) {
-        navigator.serviceWorker.register('/service-worker.js').then(reg => {
-            reg.addEventListener('updatefound', () => {
-            newWorker = reg.installing;
-            });
-        });
-        let refreshing;
-        navigator.serviceWorker.addEventListener('controllerchange', function () {
-            if (refreshing) return;
-            window.location.reload();
-            refreshing = true;
-        });
-        }
-    </script>
-</body>
+    <script src="./js/standard.js"></script>
 </html>

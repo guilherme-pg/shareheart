@@ -1,0 +1,121 @@
+/* STANDARD STYLES */
+html {
+  scroll-behavior: smooth;
+}
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  text-decoration: none;
+  transition: 0.2s;
+  font-family: "Roboto", sans-serif;
+}
+body {
+  background-color: #f5f5f5;
+  display: flex;
+  flex-direction: column;
+}
+
+/* HEADER */
+header {
+  background-color: #86469c;
+  position: fixed;
+  height: 50px;
+  width: 100%;
+}
+.logo_menu_zone {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+  margin-left: 15px;
+}
+.logo_zone a {
+  color: #ffebb2;
+}
+.header_menu_zone {
+  display: none;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+}
+.header_menu_zone a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffebb2;
+  height: 100%;
+  padding: 0 10px 0 10px;
+  transition: 0.2s;
+}
+.header_menu_zone a:hover {
+  background-color: #bc7fcd;
+}
+.button_collapse_menu {
+  background-color: #86469c;
+  color: #ffebb2;
+  cursor: pointer;
+  font-size: 20px;
+  padding: 10px 15px;
+}
+.menu_collapse {
+  background-color: #bc7fcd;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: absolute;
+  left: 0;
+  width: 100%;
+}
+.menu_collapse a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffebb2;
+  width: 100%;
+  padding: 10px 0 10px 0;
+  transition: 0.2s;
+}
+.menu_collapse a:hover {
+  background-color: #86469c;
+}
+
+/* FOOTER */
+footer {
+  background-color: #86469c;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 50px;
+}
+.footer_footer {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+.footer_footer p {
+  color: #ffebb2;
+  display: flex;
+  align-items: flex-start;
+  margin-left: 15px;
+}
+
+/* RESPONSIVENESS - MEDIA QUERIES */
+
+/* SMALL */
+
+/* MEDIUM */
+
+/* LARGE */
+@media (min-width: 770px) {
+  .header_menu_zone {
+    display: flex;
+  }
+  .collapse_menu_zone {
+    display: none;
+  }
+}
+
+/* HUGE */
