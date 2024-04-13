@@ -18,9 +18,10 @@ body {
 
 /* HEADER */
 header {
-  background-color: #002DE1;
+  background-color: #002de1;
   position: fixed;
   height: 50px;
+  padding: 4px;
   width: 100%;
 }
 .logo_menu_zone {
@@ -52,7 +53,7 @@ header {
   background-color: #bc7fcd;
 }
 .button_collapse_menu {
-  background-color: #002DE1;
+  background-color: #002de1;
   color: #ffffff;
   cursor: pointer;
   font-size: 20px;
@@ -83,26 +84,28 @@ header {
 
 /* FOOTER */
 footer {
-  background-color: #002DE1;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  height: 50px;
+  background-color: #002de1;
   position: fixed;
   bottom: 0;
   width: 100%;
+  padding: 15px 0 10px 0;
+  height: 35px;
 }
-.footer_footer {
+.footer-container {
   display: flex;
+  flex-flow: row nowrap;
+}
+.footer-icon {
+  flex: 1;
+  text-align: center;
+  justify-content: space-between;
   align-items: center;
-  width: 100%;
+  align-content: center;
 }
-.footer_footer p {
-  color: #ffffff;
-  display: flex;
-  align-items: flex-start;
-  margin-left: 15px;
+
+.footer-icon img {
+  width: 30px; 
+  height: 30px;
 }
 
 /* RESPONSIVENESS - MEDIA QUERIES */
