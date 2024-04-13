@@ -8,7 +8,7 @@
         {
             "nome": "Associação Arte e Vida",
             "descricao": "Acompanhamento de crianças e adolescentes em situação de risco por meio da promoção de complemento às atividades escolares com aulas de dança, literatura, artes plásticas e jogos educativos.",
-            "endereco": "Rua Madre de Deus - 66  -Bairro do Recife"
+            "endereco": "Rua Madre de Deus - 66 - Bairro do Recife"
         },
         {
             "nome": "Associação Beneficente Filhas de Santana",
@@ -32,8 +32,8 @@
         },
         {
             "nome": "Anjos do Poço",
-            "descricao": "R. Virgílio de Oliveira - 255 - Poço da Panela",
-            "endereco": "Instituição sem fins lucrativos que abriga cães abandonados, oferece suporte veterinário e promoove adoção animal."
+            "descricao": "Instituição sem fins lucrativos que abriga cães abandonados, oferece suporte veterinário e promoove adoção animal.",
+            "endereco": "Rua Virgílio de Oliveira - 255 - Poço da Panela"
         },
         {
             "nome": "Associação Casa do Amor",
@@ -67,8 +67,8 @@
         },
         {
             "nome": "Grupo de Ajuda à Criança Carente com Câncer de Pernambuco (GAC-PE)",
-            "descricao": "Rua Dr. Otávio Coutinho - 310 - Santo Amaro",
-            "endereco": "Prestação de assistência social humanizada às crianças, adolescentes e jovens com câncer em tratamento no Centro de OncoHematologia Pediátrica."
+            "descricao": "Prestação de assistência social humanizada às crianças, adolescentes e jovens com câncer em tratamento no Centro de OncoHematologia Pediátrica.",
+            "endereco": "Rua Dr. Otávio Coutinho - 310 - Santo Amaro"
         },
         {
             "nome": "AACD - Associação de Assistência à Criança Deficiente",
