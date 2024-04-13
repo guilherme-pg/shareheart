@@ -33,13 +33,14 @@ main {
     width: 90%;
 }
 #button_to_map {
-    background-color: #002DE1;
+    background-color: #ffffff;
     display: flex;
     align-items: center;
     justify-content: center;
     color: #ffffff;
-    width: 60%;
+    width: 12%;
     padding: 20px;
+    border-radius: 50%;
     cursor: pointer;
     box-shadow: 5px 5px 5px grey;
     transition: 0.2s;
@@ -47,6 +48,10 @@ main {
 #button_to_map:hover {
     background-color: #4343f7;
     /* padding: 22px; */
+}
+#button_to_map img {
+    width: 40px;
+    height: 40px;
 }
 
 
