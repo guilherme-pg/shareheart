@@ -1,6 +1,6 @@
 /* HOME MAIN */
 main {
-    background-color: #FFEBB2;
+    background-color: #ffffff;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
@@ -15,14 +15,14 @@ main {
 }
 
 .campaigns_zone {
-    background-color: mediumpurple; 
+    background-color: #A0F587; 
     /* COR temporária */
     height: 30%;
     width: 90%;
 }
 
 .institutions_zone {
-    background-color: mediumpurple; 
+    background-color: #A0F587; 
     /* COR temporária */
     height: 30%;
     width: 90%;
@@ -33,11 +33,11 @@ main {
     width: 90%;
 }
 #button_to_map {
-    background-color: #86469C;
+    background-color: #0001F5;
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #FFEBB2;
+    color: #ffffff;
     width: 60%;
     padding: 20px;
     cursor: pointer;
@@ -45,7 +45,7 @@ main {
     transition: 0.2s;
 }
 #button_to_map:hover {
-    background-color: #BC7FCD;
+    background-color: #4343f7;
     /* padding: 22px; */
 }
 

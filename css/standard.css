@@ -11,14 +11,14 @@ html {
   font-family: "Roboto", sans-serif;
 }
 body {
-  background-color: #f5f5f5;
+  background-color: #ffffff;
   display: flex;
   flex-direction: column;
 }
 
 /* HEADER */
 header {
-  background-color: #86469c;
+  background-color: #0001F5;
   position: fixed;
   height: 50px;
   width: 100%;
@@ -31,7 +31,7 @@ header {
   margin-left: 15px;
 }
 .logo_zone a {
-  color: #ffebb2;
+  color: #ffffff;
 }
 .header_menu_zone {
   display: none;
@@ -43,7 +43,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #ffebb2;
+  color: #ffffff;
   height: 100%;
   padding: 0 10px 0 10px;
   transition: 0.2s;
@@ -52,8 +52,8 @@ header {
   background-color: #bc7fcd;
 }
 .button_collapse_menu {
-  background-color: #86469c;
-  color: #ffebb2;
+  background-color: #0001F5;
+  color: #ffffff;
   cursor: pointer;
   font-size: 20px;
   padding: 10px 15px;
@@ -72,7 +72,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #ffebb2;
+  color: #ffffff;
   width: 100%;
   padding: 10px 0 10px 0;
   transition: 0.2s;
@@ -83,7 +83,7 @@ header {
 
 /* FOOTER */
 footer {
-  background-color: #86469c;
+  background-color: #0001F5;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -99,7 +99,7 @@ footer {
   width: 100%;
 }
 .footer_footer p {
-  color: #ffebb2;
+  color: #ffffff;
   display: flex;
   align-items: flex-start;
   margin-left: 15px;
