@@ -1,14 +1,13 @@
 /* MAP */
 main {
-    background-color: #ffffff;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-height: 100vh;
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.map_zone {
-    background-color: #D895DA;
-    height: 75%;
-    width: 90%;
+#map {
+    margin-top: 5.8vh;
+    height: 87vh;
+    width: 100%;
 }
