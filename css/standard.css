@@ -23,6 +23,7 @@ header {
   height: 50px;
   padding: 4px;
   width: 100%;
+  box-sizing: border-box;
 }
 .logo_menu_zone {
   display: flex;
@@ -30,9 +31,15 @@ header {
   justify-content: space-between;
   height: 100%;
   margin-left: 15px;
+  box-sizing: border-box;
 }
 .logo_zone a {
   color: #ffffff;
+  box-sizing: border-box;
+}
+.logo_zone a img{
+  box-sizing: border-box;
+  height: 80px;
 }
 .header_menu_zone {
   display: none;
