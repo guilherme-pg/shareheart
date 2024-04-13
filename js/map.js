@@ -10,11 +10,11 @@ navigator.geolocation.getCurrentPosition(function (position) {
   var userLng = position.coords.longitude;
   L.marker([userLat, userLng])
     .addTo(map)
-    .bindPopup("Sua Localização Atual")
+    .bindPopup("Minha localização atual!")
     .openPopup();
 });
 
-// Adicione marcadores para pontos pré-cadastrados em Recife
+// Marcadores para instituições em Recife
 var points = [
   { name: "Praia de Boa Viagem", latlng: [-8.121999, -34.901051] },
   { name: "Marco Zero", latlng: [-8.062653, -34.871279] },
@@ -25,7 +25,7 @@ points.forEach(function (point) {
   L.marker(point.latlng).addTo(map).bindPopup(point.name);
 });
 
-// Atualize o tamanho do mapa quando a janela for redimensionada
+// Atualiza o tamanho do mapa quando a janela for redimensionada
 window.addEventListener("resize", function () {
   map.invalidateSize();
 });

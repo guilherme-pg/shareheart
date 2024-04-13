@@ -1,0 +1,79 @@
+{
+    "institutions": [
+        {
+            "nome": "Academia para o Desenvolvimento da Educação Brasil",
+            "descricao": "ONG responsável por promover capacitações para trabalho, defesa dos direitos socioassistenciais e mobiliazação pela educação.",
+            "endereco": "Av. Barbosa Lima - 149 - Bairo do Recife"
+        },
+        {
+            "nome": "Associação Arte e Vida",
+            "descricao": "Acompanhamento de crianças e adolescentes em situação de risco por meio da promoção de complemento às atividades escolares com aulas de dança, literatura, artes plásticas e jogos educativos.",
+            "endereco": "Rua Madre de Deus - 66  -Bairro do Recife"
+        },
+        {
+            "nome": "Associação Beneficente Filhas de Santana",
+            "descricao": "Promove assistência para idosos, pessoas com deficiência e pessoas em condição de rua. Oferece assitência jurídica aos menos favorecido e às vítimas da violência doméstica.",
+            "endereco": "Rua Dr. José Maria - 1096 - Rosarinho"
+        },
+        {
+            "nome": "Círculo do Coração de Pernambuco",
+            "descricao": "Organização não governamental de apoio à criança cardiopata e seus familiares.",
+            "endereco": "Rua Nossa Senhora da Glória - 203 - Campo Grande"
+        },
+        {
+            "nome": "Associação Da 3ª Idade Da Vila São Miguel",
+            "descricao": "Lar para idosos.",
+            "endereco": "Rua General Carlos Lira - 30 - Afogados"
+        },
+        {
+            "nome": "Associaçãode de Parkinson de Pernambuco",
+            "descricao": "Instituição sem fins lucrativos, criada em 2001 que, através de serviços e informações acerca da doença de Parkinson, visa contribuir diretamente para a melhoria da qualidade de vida de seus associados.",
+            "endereco": "Av. Caxangá - 2200 - Cordeiro"
+        },
+        {
+            "nome": "Anjos do Poço",
+            "descricao": "R. Virgílio de Oliveira - 255 - Poço da Panela",
+            "endereco": "Instituição sem fins lucrativos que abriga cães abandonados, oferece suporte veterinário e promoove adoção animal."
+        },
+        {
+            "nome": "Associação Casa do Amor",
+            "descricao": "Lar para idosas, promove atividades recreativas, acompanhamento de saúde.",
+            "endereco": "Rua Ramiz Galvão - 218 - Arruda"
+        },
+        {
+            "nome": "Associação Projeto Casa Da Criança",
+            "descricao": "Promove reforma de abrigos e creches para as crianças, reforma áreas infantis em hospitais para o tratamento de câncer infanto juvenil.",
+            "endereco": "Rua Raul Lafayette - 191 - Boa Viagem"
+        },
+        {
+            "nome": "Instituição Filhas de Maria Servas da Caridade",
+            "descricao": "Promove serviçõs sociais de apoio à saúde.",
+            "endereco": "Rua José de Alencar - 611 - Boa Vista"
+        },
+        {
+            "nome": "Lar do Nenen",
+            "descricao": "ONG que acolhe, temporariamente, meninos e meninas de 0 a 3 anos, em situação de grave risco social ou abandono, promovendo sua proteção integral, facilitando sua reintegração familiar e comunitária, ou quando inviável, sua colocação, por adoção, em família substituta.",
+            "endereco": "Rua Menezes Drumond - 284 - Madalena"
+        },
+        {
+            "nome": "NACC - Núcleo de Apoio à Criança com Câncer",
+            "descricao": "Oferece suporte aos serviços de oncologia pediátrica do Recife através de apoio às crianças e adolescentes em tratamento na cidade e seus familiares.",
+            "endereco": "Rua do Futuro - 855 - Graças"
+        },
+        {
+            "nome": "Instituição de Caridade Lar Paulo de Tarso",
+            "descricao": "Acolhe de forma integral crianças e adolescentes em situação de risco social de alta complexidade.",
+            "endereco": "Rua Jerônimo Heráclito - 479 - Ipsep"
+        },
+        {
+            "nome": "Grupo de Ajuda à Criança Carente com Câncer de Pernambuco (GAC-PE)",
+            "descricao": "Rua Dr. Otávio Coutinho - 310 - Santo Amaro",
+            "endereco": "Prestação de assistência social humanizada às crianças, adolescentes e jovens com câncer em tratamento no Centro de OncoHematologia Pediátrica."
+        },
+        {
+            "nome": "AACD - Associação de Assistência à Criança Deficiente",
+            "descricao": "Realiza consultas médicas, exames de imagem, cirurgias, terapias e a fabricação de produtos ortopédicos sob medida. Com o objetivo de estimular a reintegração das pessoas com deficiência física à sociedade, também são promovidas ações de inclusão social.",
+            "endereco": "Av. Advogado José Paulo Cavalcanti - 155 - Ilha Joana Bezerra"
+        }
+    ]
+}
