@@ -18,7 +18,7 @@ body {
 
 /* HEADER */
 header {
-  background-color: #0001F5;
+  background-color: #002DE1;
   position: fixed;
   height: 50px;
   width: 100%;
@@ -52,7 +52,7 @@ header {
   background-color: #bc7fcd;
 }
 .button_collapse_menu {
-  background-color: #0001F5;
+  background-color: #002DE1;
   color: #ffffff;
   cursor: pointer;
   font-size: 20px;
@@ -83,7 +83,7 @@ header {
 
 /* FOOTER */
 footer {
-  background-color: #0001F5;
+  background-color: #002DE1;
   display: flex;
   align-items: center;
   justify-content: center;
