@@ -25,3 +25,7 @@ button:hover {
 #restaurant {
   margin-bottom: 2rem;
 }
+#institution {
+  max-height: 300px; /* Ajuste conforme necessário */
+  overflow-y: auto; /* Permite rolagem vertical quando o conteúdo excede a altura */
+}

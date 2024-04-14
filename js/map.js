@@ -1,3 +1,5 @@
+// Seção para a área de mapa da aplicação
+
 var map = L.map("map").setView([-8.047562, -34.877002], 13); // Coordenadas de Recife
 
 L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
@@ -82,6 +84,8 @@ window.addEventListener("resize", function () {
   map.invalidateSize();
 });
 
+// Seção para calcular as Instituições mais próximas ao usuário
+
 document.addEventListener("DOMContentLoaded", () => {
   const getLocationButton = document.getElementById("getLocation");
   const userLocationSpan = document.getElementById("userLocation");
@@ -97,11 +101,11 @@ document.addEventListener("DOMContentLoaded", () => {
           6
         )}, ${userLng.toFixed(6)}`;
 
-        // Carregar dados JSON com as instituições
-        const response = await fetch("institutions.json"); // substitua 'path/to/institutions.json' pelo caminho para o arquivo JSON
+        // Carrega dados JSON com as instituições
+        const response = await fetch("institutions.json");
         const data = await response.json();
 
-        // Calcular a distância entre o doador e cada instituição
+        // Calcula a distância entre o doador e cada instituição
         const distances = data.institutions.map((institution) => {
           const distance = calculateDistance(
             userLat,
@@ -115,11 +119,11 @@ document.addEventListener("DOMContentLoaded", () => {
           };
         });
 
-        // Classificar as instituições por distância
+        // Classifica as instituições por distância
         distances.sort((a, b) => a.distance - b.distance);
 
-        // Exibir as instituições mais próximas
-        institutionDiv.innerHTML = distances
+        // Exibe as instituições mais próximas
+        institutionDiv.innerHTML = distances.slice(0, 5)
           .map((item) => {
             const arrivalTime = calculateArrivalTime(item.distance);
             return `
@@ -166,7 +170,7 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   function calculateArrivalTime(distance) {
-    const averageSpeed = 40; // Suponha uma velocidade média de 40 km/h
+    const averageSpeed = 40; 
     const time = (distance / averageSpeed) * 60; // Tempo em minutos
     return time;
   }
