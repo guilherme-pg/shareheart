@@ -135,7 +135,7 @@ document.addEventListener("DOMContentLoaded", () => {
                       )} minutos</p>
                       <p><strong>Telefone:</strong> <a href="tel:+${
                         item.institution.phone
-                      }">${item.institution.phone}</a></p>
+                      }">${item.institution.phone}</a></p><br>
                   `;
           })
           .join("");
