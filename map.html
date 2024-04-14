@@ -12,7 +12,7 @@
   <link rel="stylesheet" type="text/css" href="./css/map.css" />
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@800&family=Roboto:wght@300;400&display=swap"
     rel="stylesheet" />
-  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css">
 
   <title>ShareHeart</title>
 </head>
@@ -51,14 +51,10 @@
       <h1>Veja as instituições próximas à você:</h1>
       <button id="getLocation">Obter Minha Localização</button>
       <p><strong>Sua localização:</strong> <span id="userLocation"></span></p>
-  </div>
-  <div id="institution">
-      <h2>Instituição</h2>
-      <p><strong>Endereço:</strong> Rua (nome da rua), Recife, PE</p>
-      <p><strong>Distância:</strong> <span id="distance"></span> km</p>
-      <p><strong>Tempo de Chegada:</strong> <span id="arrivalTime"></span> minutos</p>
-      <p><strong>Telefone:</strong> <a href="tel:+550000000000">+55 00 0000-0000</a></p>
-  </div>
+    </div>
+    <div id="institution">
+      <!-- As instituições mais próximas serão exibidas aqui -->
+    </div>
   </main>
 
   <footer>
@@ -75,9 +71,8 @@
     </div>
   </footer>
 
-  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
   <script src="./js/map.js"></script>
-  <script src=".js/getLocation.js"></script>
   <script src="./js/standard.js"></script>
 </body>
 

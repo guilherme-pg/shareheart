@@ -82,44 +82,70 @@ window.addEventListener("resize", function () {
   map.invalidateSize();
 });
 
-// Pegar a Localização e calcular instituições próximas
-
 document.addEventListener("DOMContentLoaded", () => {
   const getLocationButton = document.getElementById("getLocation");
   const userLocationSpan = document.getElementById("userLocation");
-  const distanceSpan = document.getElementById("distance");
-  const arrivalTimeSpan = document.getElementById("arrivalTime");
+  const institutionDiv = document.getElementById("institution");
 
   getLocationButton.addEventListener("click", () => {
     if ("geolocation" in navigator) {
-      navigator.geolocation.getCurrentPosition((position) => {
+      navigator.geolocation.getCurrentPosition(async (position) => {
         const userLat = position.coords.latitude;
         const userLng = position.coords.longitude;
-
-        // Exemplo de coordenadas de Instituições de Caridade em Recife (substitua pelas coordenadas reais)
-        const institutionLat = -8.047562;
-        const institutionLng = -34.878049;
-
-        // Calculando a distância e tempo de chegada (usando distância euclidiana)
-        const distance = calculateDistance(
-          userLat,
-          userLng,
-          institutionLat,
-          institutionLng
-        );
-        const arrivalTime = calculateArrivalTime(distance);
 
         userLocationSpan.textContent = `${userLat.toFixed(
           6
         )}, ${userLng.toFixed(6)}`;
-        distanceSpan.textContent = distance.toFixed(2);
-        arrivalTimeSpan.textContent = arrivalTime.toFixed(0);
+
+        // Carregar dados JSON com as instituições
+        const response = await fetch("institutions.json"); // substitua 'path/to/institutions.json' pelo caminho para o arquivo JSON
+        const data = await response.json();
+
+        // Calcular a distância entre o doador e cada instituição
+        const distances = data.institutions.map((institution) => {
+          const distance = calculateDistance(
+            userLat,
+            userLng,
+            institution.latitude,
+            institution.longitude
+          );
+          return {
+            institution,
+            distance,
+          };
+        });
+
+        // Classificar as instituições por distância
+        distances.sort((a, b) => a.distance - b.distance);
+
+        // Exibir as instituições mais próximas
+        institutionDiv.innerHTML = distances
+          .map((item) => {
+            const arrivalTime = calculateArrivalTime(item.distance);
+            return `
+                      <h2>${item.institution.name}</h2>
+                      <p><strong>Endereço:</strong> ${
+                        item.institution.address
+                      }</p>
+                      <p><strong>Distância:</strong> ${item.distance.toFixed(
+                        2
+                      )} km</p>
+                      <p><strong>Tempo de Chegada:</strong> ${arrivalTime.toFixed(
+                        0
+                      )} minutos</p>
+                      <p><strong>Telefone:</strong> <a href="tel:+${
+                        item.institution.phone
+                      }">${item.institution.phone}</a></p>
+                  `;
+          })
+          .join("");
       });
     } else {
       alert("Geolocalização não está disponível no seu navegador.");
     }
   });
 
+  // Funções para calcular distância e tempo de chegada
   function calculateDistance(lat1, lon1, lat2, lon2) {
     const R = 6371; // Raio da Terra em km
     const dLat = deg2rad(lat2 - lat1);
@@ -140,8 +166,7 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   function calculateArrivalTime(distance) {
-    // Suponha uma velocidade média de 40 km/h (substitua pela velocidade real)
-    const averageSpeed = 40;
+    const averageSpeed = 40; // Suponha uma velocidade média de 40 km/h
     const time = (distance / averageSpeed) * 60; // Tempo em minutos
     return time;
   }
