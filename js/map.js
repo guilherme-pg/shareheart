@@ -7,6 +7,8 @@ L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
   maxZoom: 19,
 }).addTo(map);
 
+
+
 // Marcador para a localização do usuário
 navigator.geolocation.getCurrentPosition(function (position) {
   var userLat = position.coords.latitude;
@@ -16,6 +18,8 @@ navigator.geolocation.getCurrentPosition(function (position) {
     .bindPopup("Minha localização atual!")
     .openPopup();
 });
+
+
 
 // Marcadores para instituições em Recife
 var points = [
@@ -79,13 +83,16 @@ points.forEach(function (point) {
   L.marker(point.latlng).addTo(map).bindPopup(point.name);
 });
 
+
+
 // Atualiza o tamanho do mapa quando a janela for redimensionada
 window.addEventListener("resize", function () {
   map.invalidateSize();
 });
 
-// Seção para calcular as Instituições mais próximas ao usuário
 
+
+// Seção para calcular as Instituições mais próximas ao usuário
 document.addEventListener("DOMContentLoaded", () => {
   const getLocationButton = document.getElementById("getLocation");
   const userLocationSpan = document.getElementById("userLocation");
@@ -119,8 +126,10 @@ document.addEventListener("DOMContentLoaded", () => {
           };
         });
 
+        
         // Classifica as instituições por distância
         distances.sort((a, b) => a.distance - b.distance);
+
 
         // Exibe as instituições mais próximas
         institutionDiv.innerHTML = distances.slice(0, 5)
@@ -148,6 +157,7 @@ document.addEventListener("DOMContentLoaded", () => {
       alert("Geolocalização não está disponível no seu navegador.");
     }
   });
+
 
   // Funções para calcular distância e tempo de chegada
   function calculateDistance(lat1, lon1, lat2, lon2) {

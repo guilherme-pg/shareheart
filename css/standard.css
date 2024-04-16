@@ -16,6 +16,8 @@ body {
   flex-direction: column;
 }
 
+
+
 /* HEADER */
 header {
   background-color: #002de1;
@@ -88,6 +90,8 @@ header {
 .menu_collapse a:hover {
   background-color: #86469c;
 }
+
+
 
 /* FOOTER */
 footer {
