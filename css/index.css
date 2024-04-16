@@ -32,13 +32,17 @@ main {
     height: 20%;
     width: 90%;
 }
+.map_redirect_zone p {
+    margin-right: 10px;
+}
 #button_to_map {
-    background-color: #ffffff;
+    background-color: #f1adec;
     display: flex;
     align-items: center;
     justify-content: center;
     color: #ffffff;
-    width: 12%;
+    width: 60px;
+    height: 60px;
     padding: 20px;
     border-radius: 50%;
     cursor: pointer;
@@ -58,8 +62,8 @@ main {
 
 /* RESPONSIVENESS - MEDIA QUERIES */
 /* LARGE */
-@media (min-width: 770px) {
+/* @media (min-width: 770px) {
     #button_to_map {
         width: 40%;
     }
-}
+} */

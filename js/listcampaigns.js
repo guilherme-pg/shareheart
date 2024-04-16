@@ -5,13 +5,13 @@ document.addEventListener("DOMContentLoaded", function() {
 })
 
 function load_places() {
-    fetch("../institutions.json")
+    fetch("../campaigns.json")
         .then(response => response.json())
         .then(data => {
             const list_places = document.getElementById("list_places")
             list_places.innerHTML = ""; // limpa a lista
 
-            data.institutions.forEach(item => {
+            data.campaigns.forEach(item => {
                 const li = document.createElement("li");
                 const geolink = `<a href="geo:${item.latitude}, ${item.longitude}">Check in the Map</a>`;
                 li.innerHTML = `
