@@ -1,7 +1,7 @@
 {
     "campaigns": [
         {
-            "name": "AAAAAAAAAAAAAAAA",
+            "name": "AAAAAAA AAAAAAAAA",
             "description": "aaaaaa aaaaaaa.",
             "address": "aaaaaaaaaaa",
             "phone": "81 3333 4444",
@@ -10,7 +10,7 @@
             "longitude": -34.872561149372544
         },
         {
-            "name": "BBBBBBBBBBBBB",
+            "name": "BBBBBBB BBBBBB",
             "description": "bbbbbbb bbbbbbb bbbbbbbbbbbbb bbb bbbbbbb.",
             "address": "bbbbbbbbbbbbb",
             "phone": "81 3333 5555",
@@ -19,7 +19,7 @@
             "longitude": -34.87334425894304
         },
         {
-            "name": "CCCCCCCCCCCC",
+            "name": "CCCCCCCC CCCC",
             "description": "ccccccccccccccc.",
             "address": "ccccccccccccccccc ccccccccccc",
             "phone": "81 3333 6666",
