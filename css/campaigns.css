@@ -1,10 +1,11 @@
 /* CAMMPAIGNS */
 main {
-    background-color: #ffffff;
+    background-color: #e2fff6;
     display: flex;
     align-items: center;
     justify-content: center;
     min-height: 100vh;
+    margin: 50px 0 50px 0;
 }
 
 .list_content {
@@ -16,7 +17,7 @@ ul {
     list-style-type: none;
 }
 li {
-    background-color: #b8f8f2;
+    background-color: #d9bcff;
     margin: 10px 10px 20px 10px;
     padding: 10px;
     box-shadow: 3px 3px 3px grey;

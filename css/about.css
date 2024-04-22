@@ -1,13 +1,32 @@
 /* SOBRE */
 main {
-    background-color: #ffffff;
+    background-color: #e2fff6;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     min-height: 100vh;
+    margin: 100px 0 100px 0;
 }
 
 .about {
     margin: 10px;
+}
+
+/* RESPONSIVENESS - MEDIA QUERIES */
+
+/* MEDIUM */
+@media (min-width: 425px) {
+    main {
+        justify-content: space-evenly;
+    }
+}
+
+
+/* LARGE */
+@media (min-width: 770px) {
+    main {
+        justify-content: center;
+        flex-direction: row;
+    }
 }

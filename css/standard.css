@@ -11,7 +11,7 @@ html {
   font-family: "Roboto", sans-serif;
 }
 body {
-  background-color: #ffffff;
+  background-color: #e2fff6;
   display: flex;
   flex-direction: column;
 }
@@ -20,12 +20,12 @@ body {
 
 /* HEADER */
 header {
-  background-color: #002de1;
+  background-color: #603F8B;
   position: fixed;
-  height: 50px;
-  padding: 4px;
+  height: 80px;
   width: 100%;
   box-sizing: border-box;
+  z-index: 1000;
 }
 .logo_menu_zone {
   display: flex;
@@ -36,7 +36,7 @@ header {
   box-sizing: border-box;
 }
 .logo_zone a {
-  color: #ffffff;
+  color: #e2fff6;
   box-sizing: border-box;
 }
 .logo_zone a img{
@@ -53,7 +53,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #ffffff;
+  color: #e2fff6;
   height: 100%;
   padding: 0 10px 0 10px;
   transition: 0.2s;
@@ -62,8 +62,8 @@ header {
   background-color: #bc7fcd;
 }
 .button_collapse_menu {
-  background-color: #002de1;
-  color: #ffffff;
+  background-color: #603F8B;
+  color: #e2fff6;
   cursor: pointer;
   font-size: 20px;
   padding: 10px 15px;
@@ -82,7 +82,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #ffffff;
+  color: #e2fff6;
   width: 100%;
   padding: 10px 0 10px 0;
   transition: 0.2s;
@@ -95,7 +95,7 @@ header {
 
 /* FOOTER */
 footer {
-  background-color: #002de1;
+  background-color: #603F8B;
   position: fixed;
   bottom: 0;
   width: 100%;
@@ -119,6 +119,22 @@ footer {
   height: 30px;
 }
 
+.footer-content {
+  display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* RESPONSIVENESS - MEDIA QUERIES */
 
 /* SMALL */
@@ -133,6 +149,44 @@ footer {
   .collapse_menu_zone {
     display: none;
   }
+
+  footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: static;
+    height: 100px;
+  }
+  .footer-container {
+    display: none;
+  }
+  .footer-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .footer-content-texto {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .footer-content-texto p {
+    color: #e2fff6;
+  }
+  .footer-content svg {
+    fill: #e2fff6;
+    height: 40px;
+    transition: text-shadow 2s;
+    margin-top: 10px;
+  }
+  .footer-content svg:active,
+  .footer-content svg:hover  {
+      filter: drop-shadow(0 0 1px #ccfaeb);
+  }
+
+
 }
 
 /* HUGE */

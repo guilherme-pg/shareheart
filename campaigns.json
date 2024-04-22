@@ -1,7 +1,7 @@
 {
     "campaigns": [
         {
-            "name": "AAAAAAAAAAAAAAAA",
+            "name": "AAAAAAA AAAAAAAAA",
             "description": "aaaaaa aaaaaaa.",
             "address": "aaaaaaaaaaa",
             "phone": "81 3333 4444",
@@ -10,7 +10,7 @@
             "longitude": -34.872561149372544
         },
         {
-            "name": "BBBBBBBBBBBBB",
+            "name": "BBBBBBB BBBBBB",
             "description": "bbbbbbb bbbbbbb bbbbbbbbbbbbb bbb bbbbbbb.",
             "address": "bbbbbbbbbbbbb",
             "phone": "81 3333 5555",
@@ -19,11 +19,47 @@
             "longitude": -34.87334425894304
         },
         {
-            "name": "CCCCCCCCCCCC",
+            "name": "CCCCCCCC CCCC",
             "description": "ccccccccccccccc.",
             "address": "ccccccccccccccccc ccccccccccc",
             "phone": "81 3333 6666",
             "institution": "CCCCCC CCCCCCCCCCC CCCCCCCCCC",
+            "latitude": -8.034312747181934,
+            "longitude": -34.901202577910254
+        },
+        {
+            "name": "dddddd BBBBBB",
+            "description": "dddddd ddddd dddd ddd ddddddd.",
+            "address": "dddddd",
+            "phone": "81 3333 5555",
+            "institution": "dddddddd BBBBB",
+            "latitude": -8.064922397004764,
+            "longitude": -34.87334425894304
+        },
+        {
+            "name": "eeeeeee CCCC",
+            "description": "eeeeeeee.",
+            "address": "eeeeeeee ccccccccccc",
+            "phone": "81 3333 6666",
+            "institution": "eeeeeee CCCCCCCCCCC CCCCCCCCCC",
+            "latitude": -8.034312747181934,
+            "longitude": -34.901202577910254
+        },
+        {
+            "name": "fffff fff",
+            "description": "fffff ff ffff f fffff.",
+            "address": "fffff",
+            "phone": "81 3333 5555",
+            "institution": "fffffff ffff fff",
+            "latitude": -8.064922397004764,
+            "longitude": -34.87334425894304
+        },
+        {
+            "name": "gggggggggg ggg gggg",
+            "description": "gggggggg.",
+            "address": "ggggggggg gggggggg",
+            "phone": "81 3333 6666",
+            "institution": "ggggggg gggg ggggg",
             "latitude": -8.034312747181934,
             "longitude": -34.901202577910254
         }
