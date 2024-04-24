@@ -1,13 +1,17 @@
-
-const button_collapse_menu = document.getElementById("button_collapse_menu");
-const menu_collapse = document.getElementById("menu_collapse");
+const btn_abrirMenuHamburguer = document.querySelector(".button_collapse_menu");
+const secao_menuhamburguer = document.querySelector(".menu-hamburguer-content");
+const btn_fecharMenuHamburguer = document.querySelector(".btn-close-hamburguer");
 
 // COLLAPSE MENU and CLOSE
-button_collapse_menu.addEventListener("click", function() {
-    if (menu_collapse.style.display == "" || menu_collapse.style.display == "none") {
-        menu_collapse.style.display = "flex";
-
+btn_abrirMenuHamburguer.addEventListener("click", function() {
+    if (secao_menuhamburguer.style.display == "" || secao_menuhamburguer.style.display == "none") {
+        secao_menuhamburguer.style.display = "flex";
     } else {
-        menu_collapse.style.display = "none";
+        secao_menuhamburguer.style.display = "none";
     }
 });
+btn_fecharMenuHamburguer.addEventListener("click", function() {
+    secao_menuhamburguer.style.display = "none";
+} )
+
+
