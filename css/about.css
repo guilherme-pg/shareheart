@@ -1,32 +1,27 @@
 /* SOBRE */
 main {
-    background-color: #e2fff6;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    min-height: 100vh;
-    margin: 100px 0 100px 0;
+    margin: 90px;
+    z-index: 1002;
+    position: relative;
 }
-
 .about {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+    gap: 15px;
     margin: 10px;
+    color: white;
 }
-
-/* RESPONSIVENESS - MEDIA QUERIES */
-
-/* MEDIUM */
-@media (min-width: 425px) {
+strong {
+    text-decoration: underline;
+}
+@media screen and (max-width: 788px) {
     main {
-        justify-content: space-evenly;
+        margin: 90px 30px;
     }
-}
-
-
-/* LARGE */
-@media (min-width: 770px) {
-    main {
-        justify-content: center;
-        flex-direction: row;
+    .about {
+        
     }
 }
