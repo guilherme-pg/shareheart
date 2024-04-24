@@ -25,48 +25,51 @@
     </div>
     <div class="header_home" id="header_home">
       <div class="header_home_content_logo">
-        <a href="index.html"><div class="header_home_logo_content">
-          <section>
-            <img class="logo" src="imgs/logo-shareheart.png" alt="Logo Share Heart">
-          </section>
-          <section>
-            <img class="logomarca" src="imgs/shareheart-logotipo-white.png" alt="Logomarca ShareHeart">
-          </section>
-        </div>
+        <a href="index.html">
+          <div class="header_home_logo_content">
+            <section>
+              <img class="logo" src="imgs/logo-shareheart.png" alt="Logo Share Heart">
+            </section>
+            <section>
+              <img class="logomarca" src="imgs/shareheart-logotipo-white.png" alt="Logomarca ShareHeart">
+            </section>
+          </div>
         </a>
       </div>
       <button class="button_collapse_menu" id="button_collapse_menu">
         ☰
-    </button>
+      </button>
       <div class="menu-hamburguer-content">
-          <div class="menu-hamburguer-content-mainbox">
-            <div class="btn-close-hamburguer" id="btn-close-hamburguer">
-              <img src="imgs/close.svg" alt="Ícone de Fechar o Menu">
-            </div>
-            <div class="menu-hamburguer-content-box"> 
-              <a href="about.html">Quem Somos</a>
-              <a href="campaigns.html">Campanhas</a>
-              <a href="institutions.html">Instituições</a>
-            </div>
+        <div class="menu-hamburguer-content-mainbox">
+          <div class="btn-close-hamburguer" id="btn-close-hamburguer">
+            <img src="imgs/close.svg" alt="Ícone de Fechar o Menu">
           </div>
-      </div>
-      <div class="menu-content">
-          <a href="about.html">Quem Somos</a>
+          <div class="menu-hamburguer-content-box">
+            <a href="about.html">Quem Somos</a>
             <a href="campaigns.html">Campanhas</a>
             <a href="institutions.html">Instituições</a>
+          </div>
+        </div>
+      </div>
+      <div class="menu-content">
+        <a href="about.html">Quem Somos</a>
+        <a href="campaigns.html">Campanhas</a>
+        <a href="institutions.html">Instituições</a>
       </div>
     </div>
   </header>
   <main>
+    <div id="map" class="map_zone"></div>
+
     <div id="location">
-      <h1>Veja as instituições próximas à você</h1>
+      <h1>Veja as instituições próximas à você:</h1>
       <button id="getLocation">Obter Minha Localização</button>
       <p><strong>Sua localização:</strong> <span id="userLocation"></span></p>
     </div>
+
     <div id="institution">
       <!-- As instituições mais próximas serão exibidas aqui -->
     </div>
-    <div id="map" class="map_zone"></div>
   </main>
   <footer>
     <div class="footer-mobile">
@@ -85,10 +88,8 @@
     </div>
   </footer>
 
-
-  
   <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
-  <script src="./js/map.js"></script>
+  <script src="/js/map.js"></script>
   <script src="./js/standard.js"></script>
 </body>
 
