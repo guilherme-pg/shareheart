@@ -36,7 +36,8 @@ main {
     padding: 10px 20px;
     border: 2px solid var(--cor-bege);
     border-radius: 10px;
-    color: var(--cor-fonte);
+    color: var(--cor-fonte);    
+    font-weight: 800;
 }
 .campaigns_zone:hover, .institutions_zone:hover {
     border-color: var(--cor-destaque);
