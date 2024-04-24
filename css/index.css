@@ -1,121 +1,45 @@
+
 /* HOME MAIN */
 main {
-    background-color: #e2fff6;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     flex-direction: column;
-    min-height: 100vh;
-    padding: 100px 0 100px 0;
+    gap: 30px;
+    z-index: 1001;
 }
-
-.index_sections {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 20px 0 20px 0;
-}
-.index_sections h1 {
-    margin-bottom: 5px;
-}
-
-.welcome_zone {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    width: 90%;
-}
-.welcome_zone h1 {
-    margin-bottom: 10px;
-}
-
-
-.campaigns_zone {
-    /* background-color: #E03300;  */
-    /* COR temporária */
+.main_content {
     display: flex;
     flex-direction: column;
-    width: 100%;
+    justify-content: center;
+    align-items: center;    
+    z-index: 1001;
+    margin: 90px;
 }
-.index_campaign {
-    display: flex;
-    align-items: center;
-    width: 100%;
-    overflow-x: auto;
-}
-
-
-.institutions_zone {
-    /* background-color: #E03300;  */
-    /* COR temporária */
+.texto-paginaInicial {
     display: flex;
     flex-direction: column;
-    width: 100%;
-}
-.index_institutions {
-    display: flex;
-    align-items: center;
-    width: 100%;
-    overflow-x: auto;
-}
-
-.index_list {
-    display: flex;
-    flex-direction: row;
-    /* width: 100%; */
-    list-style-type: none;
-}
-.index_list li {
-    background-color: #d9bcff;
-    height: 200px;
-    width: 130px;
-    margin: 5px;
-    padding: 5px;
-    box-shadow: 3px 3px 3px grey;
-}
-.index_list li p, .index_list li h3 {
-    font-size: 0.8rem;
-}
-
-
-.map_redirect_zone {
-    height: 20%;
-    width: 90%;
-    margin: 20px 0 20px 0;
-}
-.map_redirect_zone p {
-    margin-right: 10px;
-}
-#button_to_map {
-    background-color: #603F8B;
-    display: flex;
-    align-items: center;
     justify-content: center;
-    color: #e2fff6;
-    width: 60px;
-    height: 60px;
-    padding: 20px;
-    border-radius: 50%;
-    cursor: pointer;
-    box-shadow: 5px 5px 5px grey;
-    transition: 0.2s;
+    align-items: center;
+    gap: 15px;
+    margin: 30px 0px;
+    color: var(--cor-fonte);
 }
-#button_to_map:hover {
-    background-color: #bc7fcd;
-    /* padding: 22px; */
-}
-#button_to_map img {
-    width: 40px;
-    height: 40px;
+.botoes_funcionalidades {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
 }
 
+.campaigns_zone, .institutions_zone {
+    display: flex;
+    padding: 10px 20px;
+    border: 2px solid var(--cor-bege);
+    border-radius: 10px;
+    color: var(--cor-fonte);
+}
+.campaigns_zone:hover, .institutions_zone:hover {
+    border-color: var(--cor-destaque);
+    background-color: var(--cor-destaque);
+}
 
-
-/* RESPONSIVENESS - MEDIA QUERIES */
-/* LARGE */
-/* @media (min-width: 770px) {
-    #button_to_map {
-        width: 40%;
-    }
-} */
