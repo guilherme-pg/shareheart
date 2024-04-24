@@ -9,6 +9,7 @@
 
   <link rel="manifest" href="manifest.json" />
   <link rel="stylesheet" type="text/css" href="./css/standard.css" />
+  <link rel="stylesheet" href="css/header-footer.css">
   <link rel="stylesheet" type="text/css" href="./css/map.css" />
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@800&family=Roboto:wght@300;400&display=swap"
     rel="stylesheet" />
@@ -19,80 +20,68 @@
 
 <body>
   <header>
-    <div class="logo_menu_zone">
-      <div class="logo_zone">
-        <a href="index.html"><img  class="logo-img" src="imgs/shareHeartLogo-simbolo.png" alt="Logo do Aplicativo Share Heart"></a>
-          <!-- <h1 class="barra_titulo-titulo">Share Heart</h1>   -->
-          <!-- <a href="index.html" id="site_title">ShareHeart</a> -->
-      </div>
-
-      <div class="header_menu_zone">
-        <a href="about.html">Quem Somos</a>
-        <a href="campaigns.html">Campanhas</a>
-        <a href="institutions.html">Instituições</a>
-      </div>
-
-      <div class="collapse_menu_zone">
-        <button class="button_collapse_menu" id="button_collapse_menu">
-          ☰
-        </button>
-      </div>
+    <div class="shape_left">
+      <img class="shape_left-img" src="imgs/shape-left-desktop.png" alt="">
     </div>
-
-    <div class="menu_collapse" id="menu_collapse">
-      <a href="index.html">Home</a>
-      <a href="about.html">Quem Somos</a>
-      <a href="campaigns.html">Campanhas</a>
-      <a href="institutions.html">Instituições</a>
+    <div class="header_home" id="header_home">
+      <div class="header_home_content_logo">
+        <a href="index.html"><div class="header_home_logo_content">
+          <section>
+            <img class="logo" src="imgs/logo-shareheart.png" alt="Logo Share Heart">
+          </section>
+          <section>
+            <img class="logomarca" src="imgs/shareheart-logotipo-white.png" alt="Logomarca ShareHeart">
+          </section>
+        </div>
+        </a>
+      </div>
+      <button class="button_collapse_menu" id="button_collapse_menu">
+        ☰
+    </button>
+      <div class="menu-hamburguer-content">
+          <div class="menu-hamburguer-content-mainbox">
+            <div class="btn-close-hamburguer" id="btn-close-hamburguer">
+              <img src="imgs/close.svg" alt="Ícone de Fechar o Menu">
+            </div>
+            <div class="menu-hamburguer-content-box"> 
+              <a href="about.html">Quem Somos</a>
+              <a href="campaigns.html">Campanhas</a>
+              <a href="institutions.html">Instituições</a>
+            </div>
+          </div>
+      </div>
+      <div class="menu-content">
+          <a href="about.html">Quem Somos</a>
+            <a href="campaigns.html">Campanhas</a>
+            <a href="institutions.html">Instituições</a>
+      </div>
     </div>
   </header>
-
-
-
   <main>
-    <div id="map" class="map_zone"></div>
-
     <div id="location">
-      <h1>Veja as instituições próximas à você:</h1>
+      <h1>Veja as instituições próximas à você</h1>
       <button id="getLocation">Obter Minha Localização</button>
       <p><strong>Sua localização:</strong> <span id="userLocation"></span></p>
-      <!-- precisa mostrar as cordenadas ? -->
     </div>
-    
-    <ul id="institution">
-      <!-- <ul id="list_institutions"></ul> -->
+    <div id="institution">
       <!-- As instituições mais próximas serão exibidas aqui -->
-    </ul>
-  </main>
-
-
-
-  <footer>
-    <div class="footer-container">
-      <div class="footer-icon">
-        <a href="campaigns.html"><img src="imgs/box.svg" alt="Icone de campanhas de doação"></a>
-      </div>
-      <div class="footer-icon">
-        <a href="index.html"><img src="imgs/home.svg" alt="Icone para a página inicial"></a>
-      </div>
-      <div class="footer-icon">
-        <a href="institutions.html"><img src="imgs/institution.png" alt="Icone para as instituições"></a>
-      </div>
     </div>
-
-    <div class="footer-content">
-      <section class="footer-content-texto">
-          <p>Desenvolvido por Alunos do 3º Período</p>
-          <p>Curso de Análise e Desenvolvimento de Sistemas</p>
-          <p>Faculdade SENAC - PE</p>
+    <div id="map" class="map_zone"></div>
+  </main>
+  <footer>
+    <div class="footer-mobile">
+      <section class="footer-mobile-menu">
+        <a href="campaigns.html"><img src="imgs/box.svg" alt="Ícone de Campanhas de Doação"></a>
+        <a href="index.html"><img src="imgs/home.svg" alt="Ícone da Página Inicial"></a>
+        <a href="institutions.html"><img src="imgs/institution.png" alt="Ícone das Instituições Parceiras"></a>
       </section>
-
-      <a target="_blank" class="footer_button" name="github" href="https://github.com/guilherme-pg/shareheart.git">
-        <svg class="aaa" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><path
-                d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
-      </a>
-
-        <!-- <li><a href="https://github.com/guilherme-pg/shareheart.git"><img class="github-logo" src="imgs/GitHub_Logo.png" alt=""></a></li> -->
+    </div>
+    <div class="footer-tablet-desktop">
+      <section class="footer-tablet-desktop-content">
+        <p>Desenvolvido por Alunos do 3º Período</p>
+        <p>Curso de Análise e Desenvolvimento de Sistemas</p>
+        <p>Faculdade SENAC - PE</p>
+      </section>
     </div>
   </footer>
 
