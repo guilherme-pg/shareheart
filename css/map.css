@@ -1,53 +1,64 @@
+:root {
+  --cor-bege: #EABFA7;
+  --cor-fonte: white;
+  --cor-destaque: #E58992;
+  --cor-fundo: #5BCEAD;
+}
 /* MAP */
 main {
-  background-color: #e2fff6;
-  margin-bottom: 60px;
+  background-color: var(--cor-fonte);
+  margin: 90px 30px;
+  position: relative;
+  z-index: 1002;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-flow: column nowrap;
+  border-radius: 10px;
+}
+#location {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  padding: 20px 0px;
+  
+
+}
+#location h1 {
+  text-align: center;
 }
 #map {
-  /* margin-top: 5.8vh; */
-  margin-top: 80px;
+  margin-top: 5.8vh;
   height: 70vh;
   width: 100%;
 }
-
-#location {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  padding: 10px;
-}
-#location h1 {
-  margin-bottom: 20px;
-}
-
-#location button {
-  background-color: #603F8B;
-  color: #e2fff6;
-  border: none;
+button {
+  background-color: transparent;
+  color: var(--cor-destaque);
+  border: 2px solid var(--cor-destaque);
   padding: 0.5rem 1rem;
   cursor: pointer;
-  box-shadow: 3px 3px 3px grey;
-  margin-bottom: 10px;
+  border-radius: 10px;
 }
-#location button:hover {
-  background-color: #603F8B;
+button:hover {
+  background-color: var(--cor-destaque);
+  color: var(--cor-fonte)
 }
 #location,
 #restaurant {
   margin-bottom: 2rem;
 }
-
-ul {
-  list-style-type: none;
+#institution {
+  display: none;
+  flex-direction: column;
+  gap: 10px;
+  border: 2px solid var(--cor-destaque);
+  padding: 20px 30px;
+  border-radius: 10px;
 }
-#institution li {
-  background-color: #d9bcff;
-  margin: 10px 10px 20px 10px;
-  padding: 10px;
-  box-shadow: 3px 3px 3px grey;
+.telefone {
+  border-bottom: 2px dashed var(--cor-destaque);
+  padding-bottom: 10px;
 }
