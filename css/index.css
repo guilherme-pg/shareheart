@@ -1,6 +1,13 @@
-
+:root {
+    --cor-bege: #EABFA7;
+    --cor-button: #f8e8e0;
+    --cor-fonte: white;
+    --cor-destaque: #E58992;
+    --cor-fundo: #5BCEAD;
+}
 /* HOME MAIN */
 main {
+    margin: 110px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -43,4 +50,31 @@ main {
     border-color: var(--cor-destaque);
     background-color: var(--cor-destaque);
 }
+.zone_to_map {
+    display: flex;
+    margin: 55px;
+    justify-content: space-around;
+}
+#button_to_map {
+    background-color: var(--cor-button);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    width: 40px;
+    height: 40px;
+    padding: 20px;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 5px 5px 5px grey;
+    transition: 0.2s;
+  }
+  #button_to_map:hover {
+    background-color: var(--cor-destaque);
+    color: var(--cor-fonte)
+  }
+  #button_to_map img {
+    width: 35px;
+    height: 35px;
+  }
 

@@ -1,5 +1,6 @@
 :root {
   --cor-bege: #EABFA7;
+  --cor-button: #f8e8e0;
   --cor-fonte: white;
   --cor-destaque: #E58992;
   --cor-fundo: #5BCEAD;
@@ -23,8 +24,6 @@ main {
   align-items: center;
   gap: 15px;
   padding: 20px 0px;
-  
-
 }
 #location h1 {
   text-align: center;
@@ -35,7 +34,7 @@ main {
   width: 100%;
 }
 button {
-  background-color: transparent;
+  background-color: var(--cor-button);
   color: var(--cor-destaque);
   border: 2px solid var(--cor-destaque);
   padding: 0.5rem 1rem;
@@ -46,12 +45,7 @@ button:hover {
   background-color: var(--cor-destaque);
   color: var(--cor-fonte)
 }
-#location,
-#restaurant {
-  margin-bottom: 2rem;
-}
 #institution {
-  display: none;
   flex-direction: column;
   gap: 10px;
   border: 2px solid var(--cor-destaque);

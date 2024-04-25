@@ -136,7 +136,7 @@ document.addEventListener("DOMContentLoaded", () => {
                       <p><strong>Tempo de Chegada:</strong> ${arrivalTime.toFixed(
                         0
                       )} minutos</p>
-                      <p><strong>Telefone:</strong> <a href="tel:+${
+                      <p class="telefone"><strong>Telefone:</strong> <a href="tel:+${
                         item.institution.phone
                       }">${item.institution.phone}</a></p><br>
                   `;
