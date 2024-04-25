@@ -195,6 +195,7 @@ document.addEventListener("DOMContentLoaded", () => {
         // Exibe as instituições mais próximas
         institutionDiv.innerHTML = distances.slice(0, 7)
           .map((item) => {
+            institutionDiv.style.display = 'flex';
             const arrivalTime = calculateArrivalTime(item.distance);
             return `
                       <h2>${item.institution.name}</h2>
