@@ -7,11 +7,22 @@ L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
   maxZoom: 19,
 }).addTo(map);
 
+// USER pin RED
+var redIcon = L.icon({
+  iconUrl: 'https://cdn.rawgit.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-red.png',
+  shadowUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/images/marker-shadow.png',
+
+  iconSize: [25, 41],
+  iconAnchor: [12, 41],
+  popupAnchor: [1, -34],
+  shadowSize: [41, 41]
+});
+
 // Marcador para a localização do usuário
 navigator.geolocation.getCurrentPosition(function (position) {
   var userLat = position.coords.latitude;
   var userLng = position.coords.longitude;
-  L.marker([userLat, userLng])
+  L.marker([userLat, userLng], {icon: redIcon})
     .addTo(map)
     .bindPopup("Minha localização atual!")
     .openPopup();
