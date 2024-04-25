@@ -40,13 +40,18 @@
     right: -2px;
 }
 .btn-close-hamburguer {
-    z-index: 1003;
+    width: 2em;
+    z-index: 3;
+    padding: 10px;
 }
 .menu-hamburguer-content-mainbox {
     display: flex;
     flex-direction: row;
     background-color: var(--cor-destaque);
     box-shadow: 0px 4px 8px 1200px rgba(0, 0, 0, 0.222);
+    position: absolute;
+    right: 0px;
+    z-index: 3;
 }
 .menu-hamburguer-content-box {
     display: flex;

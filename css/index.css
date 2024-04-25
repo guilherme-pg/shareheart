@@ -5,6 +5,7 @@
     --cor-destaque: #E58992;
     --cor-fundo: #5BCEAD;
 }
+
 /* HOME MAIN */
 main {
     margin: 110px;
@@ -13,14 +14,14 @@ main {
     justify-content: space-between;
     flex-direction: column;
     gap: 30px;
-    z-index: 1001;
+    z-index: 2; 
 }
 .main_content {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;    
-    z-index: 1001;
+    z-index: 2;
     margin: 90px;
 }
 .texto-paginaInicial {
@@ -52,6 +53,10 @@ main {
 }
 .zone_to_map {
     display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+    color: var(--cor-fonte);
     margin: 55px;
     justify-content: space-around;
 }
