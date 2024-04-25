@@ -45,6 +45,9 @@ button:hover {
   background-color: var(--cor-destaque);
   color: var(--cor-fonte)
 }
+.getLocation_user_location{
+  display: none;
+}
 #institution {
   flex-direction: column;
   gap: 10px;
