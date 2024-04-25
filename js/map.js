@@ -84,6 +84,66 @@ var points = [
     name: "AACD - Associação de Assistência à Criança Deficiente",
     latlng: [-8.071789450961326, -34.893094589846704],
   },
+  {
+    name: "Instituto Beneficente Amigos da Criança",
+    latlng: [-8.086454, -34.945078],
+  },
+  {
+    name: "Instituto de Assistência Social e Cidadania",
+    latlng: [-8.009658, -34.853392],
+  },
+  {
+    name: "Associação de Assistência à Criança e ao Adolescente",
+    latlng: [-8.102923, -34.908072],
+  },
+  {
+    name: "Associação de Apoio aos Doentes com Câncer",
+    latlng: [-8.009833, -34.859836],
+  },
+  {
+    name: "Associação Beneficente de Apoio aos Idosos",
+    latlng: [-8.130174, -34.928743],
+  },
+  {
+    name: "Centro de Acolhimento e Apoio à Mulher",
+    latlng: [-8.006401, -34.855799],
+  },
+  {
+    name: "Centro de Educação e Desenvolvimento Comunitário",
+    latlng: [-7.998456, -34.847309],
+  },
+  {
+    name: "Instituto de Acolhimento e Resgate da Cidadania",
+    latlng: [-8.132407, -34.935422],
+  },
+  {
+    name: "Centro de Promoção da Saúde",
+    latlng: [-7.998898, -34.854144],
+  },
+  {
+    name: "Associação de Amparo aos Animais",
+    latlng: [-8.108246, -34.912726],
+  },
+  {
+    name: "Associação de Apoio aos Portadores de Deficiência",
+    latlng: [-7.996789, -34.852162],
+  },
+  {
+    name: "Instituto de Ação Social e Desenvolvimento",
+    latlng: [-8.123395, -34.935668],
+  },
+  {
+    name: "Associação de Assistência ao Dependente Químico",
+    latlng: [-8.006774, -34.854784],
+  },
+  {
+    name: "Centro de Integração e Apoio ao Trabalhador",
+    latlng: [-8.134799, -34.931726],
+  },
+  {
+    name: "Associação de Apoio à Terceira Idade",
+    latlng: [-7.996539, -34.851982],
+  },
 ];
 
 points.forEach(function (point) {
@@ -133,7 +193,7 @@ document.addEventListener("DOMContentLoaded", () => {
         distances.sort((a, b) => a.distance - b.distance);
 
         // Exibe as instituições mais próximas
-        institutionDiv.innerHTML = distances.slice(0, 5)
+        institutionDiv.innerHTML = distances.slice(0, 7)
           .map((item) => {
             const arrivalTime = calculateArrivalTime(item.distance);
             return `

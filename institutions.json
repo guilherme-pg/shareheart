@@ -119,6 +119,126 @@
             "phone": "81 3419 4000",
             "latitude": -8.071789450961326,
             "longitude": -34.893094589846704
+        },
+        {
+            "name": "Instituto Beneficente Amigos da Criança",
+            "description": "Atua na promoção de assistência a crianças em situação de vulnerabilidade social.",
+            "address": "Av. Dr. José Rufino, 128 - Jaboatão dos Guararapes",
+            "phone": "(81) 3482-1826",
+            "latitude": -8.086454,
+            "longitude": -34.945078
+        },
+        {
+            "name": "Instituto de Assistência Social e Cidadania",
+            "description": "Oferece serviços socioassistenciais para a comunidade local.",
+            "address": "R. São José, 261 - Olinda",
+            "phone": "(81) 3429-3070",
+            "latitude": -8.009658,
+            "longitude": -34.853392
+        },
+        {
+            "name": "Associação de Assistência à Criança e ao Adolescente",
+            "description": "Presta auxílio e apoio a crianças e adolescentes em situação de risco.",
+            "address": "Av. Abreu e Lima, 1234 - Jaboatão dos Guararapes",
+            "phone": "(81) 3382-4050",
+            "latitude": -8.102923,
+            "longitude": -34.908072
+        },
+        {
+            "name": "Associação de Apoio aos Doentes com Câncer",
+            "description": "Oferece suporte e assistência a pacientes oncológicos e seus familiares.",
+            "address": "R. Joaquim Nabuco, 567 - Olinda",
+            "phone": "(81) 3429-7015",
+            "latitude": -8.009833,
+            "longitude": -34.859836
+        },
+        {
+            "name": "Associação Beneficente de Apoio aos Idosos",
+            "description": "Promove o cuidado e o bem-estar de idosos na região.",
+            "address": "Av. Beira Mar, 432 - Jaboatão dos Guararapes",
+            "phone": "(81) 3378-2010",
+            "latitude": -8.130174,
+            "longitude": -34.928743
+        },
+        {
+            "name": "Centro de Acolhimento e Apoio à Mulher",
+            "description": "Oferece suporte e proteção a mulheres vítimas de violência doméstica.",
+            "address": "R. da Conceição, 789 - Olinda",
+            "phone": "(81) 3439-5050",
+            "latitude": -8.006401,
+            "longitude": -34.855799
+        },
+        {
+            "name": "Centro de Educação e Desenvolvimento Comunitário",
+            "description": "Promove a educação e o desenvolvimento comunitário em Olinda.",
+            "address": "R. Dr. Manoel Borba, 321 - Olinda",
+            "phone": "(81) 3429-9500",
+            "latitude": -7.998456,
+            "longitude": -34.847309
+        },
+        {
+            "name": "Instituto de Acolhimento e Resgate da Cidadania",
+            "description": "Atua no resgate e na reintegração social de pessoas em situação de rua.",
+            "address": "Av. Gov. Agamenon Magalhães, 1045 - Jaboatão dos Guararapes",
+            "phone": "(81) 3378-5500",
+            "latitude": -8.132407,
+            "longitude": -34.935422
+        },
+        {
+            "name": "Centro de Promoção da Saúde",
+            "description": "Promove a saúde e o bem-estar da comunidade local.",
+            "address": "R. da Boa Hora, 210 - Olinda",
+            "phone": "(81) 3429-8000",
+            "latitude": -7.998898,
+            "longitude": -34.854144
+        },
+        {
+            "name": "Associação de Amparo aos Animais",
+            "description": "Oferece cuidados e abrigo a animais abandonados e em situação de risco.",
+            "address": "Av. Dr. Fábio Corrêa, 765 - Jaboatão dos Guararapes",
+            "phone": "(81) 3362-1020",
+            "latitude": -8.108246,
+            "longitude": -34.912726
+        },
+        {
+            "name": "Associação de Apoio aos Portadores de Deficiência",
+            "description": "Presta apoio e assistência a pessoas com deficiência na região.",
+            "address": "R. do Amparo, 543 - Olinda",
+            "phone": "(81) 3429-6070",
+            "latitude": -7.996789,
+            "longitude": -34.852162
+        },
+        {
+            "name": "Instituto de Ação Social e Desenvolvimento",
+            "description": "Atua no desenvolvimento social e na promoção da cidadania.",
+            "address": "Av. Gov. Carlos de Lima Cavalcanti, 123 - Jaboatão dos Guararapes",
+            "phone": "(81) 3378-9030",
+            "latitude": -8.123395,
+            "longitude": -34.935668
+        },
+        {
+            "name": "Associação de Assistência ao Dependente Químico",
+            "description": "Oferece suporte e tratamento a dependentes químicos e suas famílias.",
+            "address": "R. de São Bento, 876 - Olinda",
+            "phone": "(81) 3439-2000",
+            "latitude": -8.006774,
+            "longitude": -34.854784
+        },
+        {
+            "name": "Centro de Integração e Apoio ao Trabalhador",
+            "description": "Promove a integração e oferece apoio a pessoas em busca de emprego.",
+            "address": "Av. Bernardo Vieira de Melo, 987 - Jaboatão dos Guararapes",
+            "phone": "(81) 3378-4050",
+            "latitude": -8.134799,
+            "longitude": -34.931726
+        },
+        {
+            "name": "Associação de Apoio à Terceira Idade",
+            "description": "Presta assistência e promove a qualidade de vida dos idosos na região.",
+            "address": "R. do Amparo, 321 - Olinda",
+            "phone": "(81) 3429-8001",
+            "latitude": -7.996539,
+            "longitude": -34.851982
         }
     ]
 }
