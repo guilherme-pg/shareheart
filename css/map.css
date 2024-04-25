@@ -9,13 +9,13 @@
 main {
   background-color: var(--cor-fonte);
   margin: 90px 30px;
-  position: relative;
-  z-index: 1002;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-flow: column nowrap;
   border-radius: 10px;
+  position: relative;
+  z-index: 2;
 }
 #location {
   display: flex;
@@ -33,7 +33,7 @@ main {
   height: 70vh;
   width: 100%;
 }
-button {
+#getLocation {
   background-color: var(--cor-button);
   color: var(--cor-destaque);
   border: 2px solid var(--cor-destaque);
@@ -49,6 +49,7 @@ button:hover {
   display: none;
 }
 #institution {
+  display: none;
   flex-direction: column;
   gap: 10px;
   border: 2px solid var(--cor-destaque);
