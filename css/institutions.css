@@ -13,7 +13,7 @@
     color: var(--cor-fonte);
     z-index: 2;
     position: relative;
-    margin: 70px 40px;
+    margin: 110px 60px;
 }
 .menu_busca_box {
     display: flex;
