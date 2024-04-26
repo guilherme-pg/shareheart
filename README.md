@@ -7,7 +7,7 @@ Share Heart is an application with the aim of simplifying and encouraging the co
 ## Link para a apresentação / Link to presentation
 [SLIDES SHAREHEART](https://github.com/guilherme-pg/shareheart/blob/master/Mobile%20-%20ShareHeart.pdf)
 
-## Equipe/Squad
+## Equipe / Squad
 
 - Barbara Rodrigues
 - Guilherme Guimarães
